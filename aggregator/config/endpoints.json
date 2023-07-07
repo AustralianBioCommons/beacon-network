@@ -3,5 +3,10 @@
         "type": "instance",
         "base": "https://beacon.demo.umccr.org",
         "individuals": "https://beacon.demo.umccr.org/individuals"
+    }, 
+    {
+        "type": "instance",
+        "base": "http://20.211.94.26:5060",
+        "individuals": "http://20.211.94.26:5060/api/individuals"
     }
 ]
