@@ -6,8 +6,8 @@
   "scripts": {
     "umccr-dev-deploy": "cdk --app 'npx ts-node stacks.ts' deploy BeaconNetworkUmccrDev",
     "umccr-dev-destroy": "cdk --app 'npx ts-node stacks.ts' destroy BeaconNetworkUmccrDev",
-    "biocommons-dev-deploy": "cdk --app 'npx ts-node stacks.ts' deploy BeaconNetworkAustralianBiocommonsProd",
-    "biocommons-dev-destroy": "cdk --app 'npx ts-node stacks.ts' destroy BeaconNetworkAustralianBiocommonsProd"
+    "biocommons-dev-deploy": "cdk --profile=test --app 'npx ts-node stacks.ts' deploy BeaconNetworkAustralianBiocommonsTest",
+    "biocommons-dev-destroy": "cdk --profile=test --app 'npx ts-node stacks.ts' destroy BeaconNetworkAustralianBiocommonsTest"
   },
   "devDependencies": {
     "@tsconfig/node18": "2.0.0",

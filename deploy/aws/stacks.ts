@@ -5,6 +5,20 @@ import { BeaconNetworkStack } from "./beacon-network-stack";
 const app = new cdk.App();
 
 /**
+ * Stack for Australian Biocommons
+ */
+new BeaconNetworkStack(app, "BeaconNetworkAustralianBiocommonsTest", {
+  env: {
+    account: "232870232581",
+    region: "ap-southeast-2",
+  },
+  description: "HGPP Beacon Network",
+  tags: {"Division": "HGPP"},
+  secretArn: "arn:aws:secretsmanager:ap-southeast-2:232870232581:secret:BeaconNetwork-9awS2E",
+  deployUrl: "https://beacon-network.test.biocommons.org.au",
+});
+
+/**
  * Stack for UMCCR dev
  */
 new BeaconNetworkStack(app, "BeaconNetworkUmccrDev", {
@@ -22,16 +36,3 @@ new BeaconNetworkStack(app, "BeaconNetworkUmccrDev", {
   deployUrl: "https://beacon-network.dev.umccr.org",
 });
 
-/**
- * Stack for Australian Biocommons
- */
-new BeaconNetworkStack(app, "BeaconNetworkAustralianBiocommonsProd", {
-  env: {
-    account: "0000",
-    region: "ap-southeast-2",
-  },
-  description: "HGPP Beacon Network",
-  tags: {},
-  secretArn: "arn:aws:secretsmanager:ap-southeast-2:0000:secret:XYZ",
-  deployUrl: "https://beacon-network.biocommons.org.au",
-});
