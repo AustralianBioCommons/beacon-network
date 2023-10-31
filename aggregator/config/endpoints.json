@@ -6,7 +6,7 @@
     }, 
     {
         "type": "instance",
-        "base": "http://20.211.94.26:5060",
-        "individuals": "http://20.211.94.26:5060/api/individuals"
+        "base": "http://20.211.94.26:443",
+        "individuals": "http://20.211.94.26:443/api/individuals"
     }
 ]
