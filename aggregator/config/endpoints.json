@@ -7,6 +7,6 @@
     {
         "type": "instance",
         "base": "http://20.211.94.26:80",
-        "individuals": "http://20.211.94.26:80/api/individuals"
+        "individuals": "https://beacon.zerochildhoodcancer.cloud/api/individuals"
     }
 ]
