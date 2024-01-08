@@ -7,6 +7,6 @@
     {
         "type": "instance",
         "base": "https://beacon.zerochildhoodcancer.cloud",
-        "individuals": "https://beacon.zerochildhoodcancer.cloud/api/individuals"
+        "individuals": "https://beacon.zerochildhoodcancer.cloud/api/individuals?limit=10000"
     }
 ]
